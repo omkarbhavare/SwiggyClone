@@ -1,0 +1,94 @@
+/* Home.css */
+
+.home-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* What's on Your Mind Section */
+  .woym-section {
+    text-align: center;
+  }
+  .woym-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .woym-image {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+  
+  /* Top Restaurants Section */
+  .top-restaurants-section {
+    text-align: center;
+  }
+  
+  /* Sort Options Section */
+  .sort-options-section {
+    text-align: center;
+  }
+  .sort-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .sort-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .sort-button.active {
+    background-color: #f0f0f0;
+    border-color: #333;
+  }
+  
+  /* Restaurant List Section */
+  .restaurant-list-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Best Places to Eat Section */
+  .best-places-section {
+    text-align: center;
+  }
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+  }
+  .city-item {
+    text-align: center;
+  }
+  .city-image {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .sort-options {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .restaurant-list-section {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .cities-grid {
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+  }
+  
